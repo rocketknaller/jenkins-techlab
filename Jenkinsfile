@@ -17,7 +17,7 @@ pipeline {
             steps {
                 echo "Hello, ${env.GREETINGS_TO} !"
 
-                sh 'echo "Hello, $GREETINGS_TO !"'
+                sh "echo \"Running ${env.BUILD_ID}\" "
             }
         }
     }
